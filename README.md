@@ -35,7 +35,8 @@ You'll see these three things done in the 'missing_methods.rb' file.  One thing 
 TL;DR Console Output
 --------------------
 
-`Loading development environment (Rails 4.0.1)
+```
+Loading development environment (Rails 4.0.1)
 irb(main):001:0> instance_a = MetaModel.new
 => #<MetaModel:0x007fa17c9b9400>
 irb(main):002:0> instance_a.model?
@@ -76,7 +77,8 @@ NoMethodError: undefined method 'this_does_not_exist?' for #<MetaModel:0x007fa17
 	from /Library/Ruby/Gems/2.0.0/gems/railties-4.0.1/lib/rails/commands/console.rb:9:in 'start'
 	from /Library/Ruby/Gems/2.0.0/gems/railties-4.0.1/lib/rails/commands.rb:62:in '<top (required)>'
 	from bin/rails:4:in 'require'
-	from bin/rails:4:in '<main>'`
+	from bin/rails:4:in '<main>'
+```
 
 I hope you enjoyed reading this ironically meta-less README file, and I really hope you find this useful.
 
