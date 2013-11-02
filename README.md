@@ -35,48 +35,48 @@ You'll see these three things done in the 'missing_methods.rb' file.  One thing 
 TL;DR Console Output
 --------------------
 
-`Loading development environment (Rails 4.0.1)`
-`irb(main):001:0> instance_a = MetaModel.new`
-`=> #<MetaModel:0x007fa17c9b9400>`
-`irb(main):002:0> instance_a.model?`
-`=> true`
-`irb(main):003:0> instance_a.not_model?`
-`method missing :: not_model?`
-`=> false`
-`irb(main):004:0> instance_a.not_model?`
-`=> false`
-`irb(main):005:0> instance_b = MetaModel.new`
-`=> #<MetaModel:0x007fa17c9c1600>`
-`irb(main):006:0> instance_b.not_model?`
-`=> false`
-`irb(main):007:0> instance_b.not_awesome?`
-`method missing :: not_awesome?`
-`=> false`
-`irb(main):008:0> instance_a.not_awesome?`
-`=> false`
-`irb(main):009:0> instance_a.this_does_not_exist?`
-`method missing :: this_does_not_exist?`
-`NoMethodError: undefined method 'this_does_not_exist?' for #<MetaModel:0x007fa17c9b9400>`
-`	from /Users/ryan/concerning-meta/metatastic/app/models/concerns/missing_methods.rb:51:in 'method_missing'`
-`	from (irb):9`
-`	from /Library/Ruby/Gems/2.0.0/gems/railties-4.0.1/lib/rails/commands/console.rb:90:in 'start'`
-`	from /Library/Ruby/Gems/2.0.0/gems/railties-4.0.1/lib/rails/commands/console.rb:9:in 'start'`
-`	from /Library/Ruby/Gems/2.0.0/gems/railties-4.0.1/lib/rails/commands.rb:62:in '<top (required)>'`
-`	from bin/rails:4:in 'require'`
-`	from bin/rails:4:in '<main>'`
-`irb(main):010:0> instance_a.not_this_does_not_exist?`
-`method missing :: not_this_does_not_exist?`
-`method missing :: this_does_not_exist?`
-`NoMethodError: undefined method 'this_does_not_exist?' for #<MetaModel:0x007fa17c9b9400>`
-`	from /Users/ryan/concerning-meta/metatastic/app/models/concerns/missing_methods.rb:51:in 'method_missing'`
-`	from (eval):2:in 'not_this_does_not_exist?'`
-`	from /Users/ryan/concerning-meta/metatastic/app/models/concerns/missing_methods.rb:49:in 'method_missing'`
-`	from (irb):10`
-`	from /Library/Ruby/Gems/2.0.0/gems/railties-4.0.1/lib/rails/commands/console.rb:90:in 'start'`
-`	from /Library/Ruby/Gems/2.0.0/gems/railties-4.0.1/lib/rails/commands/console.rb:9:in 'start'`
-`	from /Library/Ruby/Gems/2.0.0/gems/railties-4.0.1/lib/rails/commands.rb:62:in '<top (required)>'`
-`	from bin/rails:4:in 'require'`
-`	from bin/rails:4:in '<main>'`
+`Loading development environment (Rails 4.0.1)
+irb(main):001:0> instance_a = MetaModel.new
+=> #<MetaModel:0x007fa17c9b9400>
+irb(main):002:0> instance_a.model?
+=> true
+irb(main):003:0> instance_a.not_model?
+method missing :: not_model?
+=> false
+irb(main):004:0> instance_a.not_model?
+=> false
+irb(main):005:0> instance_b = MetaModel.new
+=> #<MetaModel:0x007fa17c9c1600>
+irb(main):006:0> instance_b.not_model?
+=> false
+irb(main):007:0> instance_b.not_awesome?
+method missing :: not_awesome?
+=> false
+irb(main):008:0> instance_a.not_awesome?
+=> false
+irb(main):009:0> instance_a.this_does_not_exist?
+method missing :: this_does_not_exist?
+NoMethodError: undefined method 'this_does_not_exist?' for #<MetaModel:0x007fa17c9b9400>
+	from /Users/ryan/concerning-meta/metatastic/app/models/concerns/missing_methods.rb:51:in 'method_missing'
+	from (irb):9
+	from /Library/Ruby/Gems/2.0.0/gems/railties-4.0.1/lib/rails/commands/console.rb:90:in 'start'
+	from /Library/Ruby/Gems/2.0.0/gems/railties-4.0.1/lib/rails/commands/console.rb:9:in 'start'
+	from /Library/Ruby/Gems/2.0.0/gems/railties-4.0.1/lib/rails/commands.rb:62:in '<top (required)>'
+	from bin/rails:4:in 'require'
+	from bin/rails:4:in '<main>'
+irb(main):010:0> instance_a.not_this_does_not_exist?
+method missing :: not_this_does_not_exist?
+method missing :: this_does_not_exist?
+NoMethodError: undefined method 'this_does_not_exist?' for #<MetaModel:0x007fa17c9b9400>
+	from /Users/ryan/concerning-meta/metatastic/app/models/concerns/missing_methods.rb:51:in 'method_missing'
+	from (eval):2:in 'not_this_does_not_exist?'
+	from /Users/ryan/concerning-meta/metatastic/app/models/concerns/missing_methods.rb:49:in 'method_missing'
+	from (irb):10
+	from /Library/Ruby/Gems/2.0.0/gems/railties-4.0.1/lib/rails/commands/console.rb:90:in 'start'
+	from /Library/Ruby/Gems/2.0.0/gems/railties-4.0.1/lib/rails/commands/console.rb:9:in 'start'
+	from /Library/Ruby/Gems/2.0.0/gems/railties-4.0.1/lib/rails/commands.rb:62:in '<top (required)>'
+	from bin/rails:4:in 'require'
+	from bin/rails:4:in '<main>'`
 
 I hope you enjoyed reading this ironically meta-less README file, and I really hope you find this useful.
 
